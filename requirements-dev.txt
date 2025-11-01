@@ -28,7 +28,7 @@ packaging==25.0
     #   pytest
 pathspec==0.12.1
     # via black
-pillow==11.3.0
+pillow==12.0.0
     # via arcade
 platformdirs==4.5.0
     # via black
