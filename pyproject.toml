@@ -15,18 +15,9 @@ dev = [
     "black",
     "ruff",
     "isort",
-    "basedpyright",  # Add basedpyright here
-]
-
-[tool.uv]
-dev-dependencies = [
-    "pytest",
-    "pytest-cov",
-    "black",
-    "ruff",
-    "isort",
     "basedpyright",
 ]
+
 [tool.ruff]
 select = ["E", "F", "W", "I", "N", "UP", "PYI"]
 ignore = []
@@ -42,6 +33,15 @@ multi_line_output = 3
 
 [tool.pyright]
 reportIncompatibleMethodOverride = "error"
-
 pythonVersion = "3.12"
 typeCheckingMode = "basic"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.32.1",
+    "black>=25.9.0",
+    "isort>=7.0.0",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.3",
+]

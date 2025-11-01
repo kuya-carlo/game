@@ -5,9 +5,9 @@ A 2D RPG game.
 """
 
 import pathlib
+from typing import override
 
 import arcade
-from typing import override
 
 ASSETS_PATH = pathlib.Path(__file__).resolve().parent / "assets"
 

@@ -26,7 +26,7 @@ repos:
       - id: ruff
         args: ["--fix"]
 
-  - repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.9.0
     hooks:
       - id: black
@@ -35,9 +35,10 @@ repos:
     rev: 7.0.0
     hooks:
       - id: isort
+        args: [--profile, black]
 
   # Add type checking with Pyright
-  - repo: https://github.com/DetachHead/basedpyright
-    rev: v1.32.1
+  - repo: https://github.com/DetachHead/basedpyright-prek-mirror
+    rev: 1.32.1
     hooks:
-      - id: pyright
+      - id: basedpyright
