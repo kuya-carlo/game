@@ -42,7 +42,7 @@ pyglet==2.1.9
     # via arcade
 pygments==2.19.2
     # via pytest
-pymunk==6.9.0
+pymunk==7.1.0
     # via arcade
 pytest==8.4.2
     # via
