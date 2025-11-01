@@ -1,0 +1,47 @@
+[project]
+name = "gaemu"
+version = "0.1.0"
+description = "A 2D RPG game."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arcade>=3.3.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "isort",
+    "basedpyright",  # Add basedpyright here
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "isort",
+    "basedpyright",
+]
+[tool.ruff]
+select = ["E", "F", "W", "I", "N", "UP", "PYI"]
+ignore = []
+line-length = 88
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pyright]
+reportIncompatibleMethodOverride = "error"
+
+pythonVersion = "3.12"
+typeCheckingMode = "basic"

@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.14.0
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+
+  - repo: https://github.com/psf/black
+    rev: 25.9.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 7.0.0
+    hooks:
+      - id: isort
+
+  # Add type checking with Pyright
+  - repo: https://github.com/DetachHead/basedpyright
+    rev: v1.32.1
+    hooks:
+      - id: pyright
