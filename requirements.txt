@@ -12,7 +12,7 @@ pycparser==2.23
     # via cffi
 pyglet==2.1.9
     # via arcade
-pymunk==6.9.0
+pymunk==7.2.0
     # via arcade
 pytiled-parser==2.2.9
     # via arcade
