@@ -10,7 +10,7 @@ pillow==11.3.0
     # via arcade
 pycparser==2.23
     # via cffi
-pyglet==2.1.9
+pyglet==2.1.11
     # via arcade
 pymunk==6.9.0
     # via arcade
