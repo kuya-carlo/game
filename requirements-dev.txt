@@ -52,7 +52,7 @@ pytest-cov==7.0.0
     # via gaemu (pyproject.toml)
 pytiled-parser==2.2.9
     # via arcade
-pytokens==0.2.0
+pytokens==0.3.0
     # via black
 ruff==0.14.3
     # via gaemu (pyproject.toml)
